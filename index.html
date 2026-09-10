@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CAFE DE LUNE portfolio sample website">
+    <title>CAFE DE LUNE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a class="logo" href="#top" aria-label="CAFE DE LUNE 홈">CAFE DE LUNE</a>
+
+        <nav class="nav" aria-label="주요 메뉴">
+            <a href="#about">ABOUT</a>
+            <a href="#menu">MENU</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#location">LOCATION</a>
+        </nav>
+
+        <button
+            class="menu-button"
+            type="button"
+            aria-label="모바일 메뉴 열기"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            onclick="toggleMenu()"
+        >☰</button>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" onclick="closeMenu()">ABOUT</a>
+        <a href="#menu" onclick="closeMenu()">MENU</a>
+        <a href="#gallery" onclick="closeMenu()">GALLERY</a>
+        <a href="#location" onclick="closeMenu()">LOCATION</a>
+    </div>
+
+    <main id="top">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="small-title">SPECIALTY COFFEE &amp; DESSERT</p>
+
+                <h1>
+                    A MOMENT<br>
+                    TO SLOW DOWN
+                </h1>
+
+                <p class="hero-description">
+                    좋은 커피와 디저트, 그리고<br>
+                    잠시 쉬어갈 수 있는 공간
+                </p>
+
+                <a href="#menu" class="hero-button">VIEW MENU</a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="section-shell">
+                <div class="section-title">
+                    <p>ABOUT US</p>
+                    <h2>CAFE DE LUNE</h2>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/04_cafe_interior.png" alt="CAFE DE LUNE의 따뜻한 카페 내부 공간">
+                    </div>
+
+                    <div class="about-text">
+                        <span>OUR STORY</span>
+
+                        <h3>
+                            하루의 속도를<br>
+                            잠시 늦추는 공간
+                        </h3>
+
+                        <p>
+                            CAFE DE LUNE은 좋은 재료와 정성스러운
+                            한 잔의 커피를 통해 편안한 시간을 선물합니다.
+                        </p>
+
+                        <p>
+                            혼자만의 여유로운 시간부터 소중한 사람과의
+                            특별한 순간까지, 누구나 편하게 머물 수 있는
+                            공간을 만들어갑니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section class="menu-section" id="menu">
+            <div class="section-shell">
+                <div class="section-title section-title-light">
+                    <p>OUR MENU</p>
+                    <h2>MENU</h2>
+                </div>
+
+                <div class="featured-menu">
+                    <article class="featured-card">
+                        <div class="featured-image">
+                            <img src="images/02_iced_latte.png" alt="CAFE DE LUNE Signature Latte">
+                        </div>
+
+                        <div class="featured-info">
+                            <div>
+                                <span>COFFEE</span>
+                                <h3>Signature Latte</h3>
+                            </div>
+                            <strong>5,500</strong>
+                        </div>
+
+                        <p>Espresso · Milk · Cream</p>
+                    </article>
+
+                    <article class="featured-card">
+                        <div class="featured-image featured-image-dessert">
+                            <img src="images/03_basque_cheesecake.png" alt="CAFE DE LUNE Basque Cheesecake">
+                        </div>
+
+                        <div class="featured-info">
+                            <div>
+                                <span>DESSERT</span>
+                                <h3>Basque Cheesecake</h3>
+                            </div>
+                            <strong>6,000</strong>
+                        </div>
+
+                        <p>Rich · Creamy · Handmade</p>
+                    </article>
+                </div>
+
+                <div class="simple-menu">
+                    <div class="simple-menu-column">
+                        <div class="simple-menu-title">
+                            <span>01</span>
+                            <h3>COFFEE</h3>
+                        </div>
+
+                        <div class="simple-menu-item">
+                            <div>
+                                <h4>Americano</h4>
+                                <p>Espresso · Water</p>
+                            </div>
+                            <strong>4,500</strong>
+                        </div>
+
+                        <div class="simple-menu-item">
+                            <div>
+                                <h4>Vanilla Latte</h4>
+                                <p>Espresso · Milk · Vanilla</p>
+                            </div>
+                            <strong>5,500</strong>
+                        </div>
+
+                        <div class="simple-menu-item">
+                            <div>
+                                <h4>Cold Brew</h4>
+                                <p>Slow Brewed Coffee</p>
+                            </div>
+                            <strong>5,500</strong>
+                        </div>
+                    </div>
+
+                    <div class="simple-menu-column">
+                        <div class="simple-menu-title">
+                            <span>02</span>
+                            <h3>DESSERT &amp; DRINK</h3>
+                        </div>
+
+                        <div class="simple-menu-item">
+                            <div>
+                                <h4>Financier</h4>
+                                <p>Butter · Almond</p>
+                            </div>
+                            <strong>3,500</strong>
+                        </div>
+
+                        <div class="simple-menu-item">
+                            <div>
+                                <h4>Peach Ade</h4>
+                                <p>Peach · Soda</p>
+                            </div>
+                            <strong>5,500</strong>
+                        </div>
+
+                        <div class="simple-menu-item">
+                            <div>
+                                <h4>Chocolate Latte</h4>
+                                <p>Chocolate · Milk</p>
+                            </div>
+                            <strong>5,500</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="gallery" id="gallery">
+            <div class="section-shell">
+                <div class="section-title">
+                    <p>OUR SPACE</p>
+                    <h2>GALLERY</h2>
+                </div>
+
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img src="images/04_cafe_interior.png" alt="CAFE DE LUNE 카페 내부">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="images/02_iced_latte.png" alt="CAFE DE LUNE 시그니처 라떼">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="images/05_cafe_menu.png" alt="CAFE DE LUNE 메뉴판">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCATION -->
+        <section class="location" id="location">
+            <div class="section-shell">
+                <div class="location-title">
+                    <span>VISIT US</span>
+                    <h2>LOCATION</h2>
+                </div>
+
+                <div class="location-content">
+                    <div class="location-info">
+                        <div class="location-box">
+                            <span class="location-label">ADDRESS</span>
+                            <h3>CAFE DE LUNE</h3>
+                            <p>
+                                서울특별시 성동구 성수동<br>
+                                00-00, CAFE DE LUNE
+                            </p>
+                        </div>
+
+                        <div class="location-box">
+                            <span class="location-label">OPENING HOURS</span>
+                            <p>
+                                MON — FRI&nbsp;&nbsp;&nbsp;10:00 — 22:00<br>
+                                SAT — SUN&nbsp;&nbsp;&nbsp;11:00 — 23:00
+                            </p>
+                        </div>
+
+                        <div class="location-box">
+                            <span class="location-label">CONTACT</span>
+                            <p>
+                                02-0000-0000<br>
+                                hello@cafedelune.kr
+                            </p>
+                        </div>
+
+                        <p class="sample-notice">PORTFOLIO SAMPLE · FICTIONAL BRAND</p>
+                    </div>
+
+                    <div class="location-visual" aria-label="CAFE DE LUNE 브랜드 그래픽">
+                        <span class="moon">☾</span>
+
+                        <div class="location-visual-text">
+                            <span>CAFE DE LUNE</span>
+                            <h3>A MOMENT<br>TO SLOW DOWN.</h3>
+                            <p>COFFEE · DESSERT · MOMENTS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">CAFE DE LUNE</div>
+            <p>A MOMENT TO SLOW DOWN.</p>
+            <small>© 2026 CAFE DE LUNE. ALL RIGHTS RESERVED.</small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
