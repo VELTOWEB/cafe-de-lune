@@ -1070,3 +1070,42 @@ footer small {
         line-height: 0.95;
     }
 }
+/* =========================
+   MOBILE HERO IMAGE
+========================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 100svh !important;
+
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
+            url("images/01_cafe_exterior_mobile.png") center center / cover no-repeat !important;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 7%;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 14vw, 64px) !important;
+        line-height: 0.95;
+        letter-spacing: -2px;
+    }
+
+    .small-title {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hero-button {
+        padding: 14px 26px;
+    }
+}
